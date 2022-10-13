@@ -11,6 +11,8 @@ import { BILLING_REDIRECTIONS } from './constants';
 import { getShellClient, setShellClient } from './shell';
 import TRACKING from './components/at-internet/at-internet.constant';
 
+console.log('test')
+
 useShellClient('hub')
   .then(async (client) => {
     const isSidebarMenuVisible = await client.ux.isMenuSidebarVisible();
