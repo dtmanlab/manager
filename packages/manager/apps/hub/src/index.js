@@ -11,7 +11,7 @@ import { BILLING_REDIRECTIONS } from './constants';
 import { getShellClient, setShellClient } from './shell';
 import TRACKING from './components/at-internet/at-internet.constant';
 
-console.log('test')
+console.log('another test')
 
 useShellClient('hub')
   .then(async (client) => {
