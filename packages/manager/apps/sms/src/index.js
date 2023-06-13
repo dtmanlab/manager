@@ -6,6 +6,7 @@ import { bootstrapApplication } from '@ovh-ux/manager-core';
 import { defineApplicationVersion } from '@ovh-ux/request-tagger';
 
 defineApplicationVersion(__VERSION__);
+console.log(__VERSION__);
 
 bootstrapApplication('sms').then((environment) => {
   import(`./config-${environment.getRegion()}`)
